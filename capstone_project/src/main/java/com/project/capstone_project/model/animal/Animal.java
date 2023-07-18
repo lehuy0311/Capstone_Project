@@ -1,4 +1,4 @@
-package com.project.capstone_project.model.animal;
+package com.example.codegymfoods.model.animal;
 
 import javax.persistence.*;
 
@@ -7,13 +7,14 @@ public class Animal {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(columnDefinition = "Varchar(40")
+    @Column(columnDefinition = "Varchar(40)")
     private String name;
     private String description;
+    private Double price;
     private int quantity;
     private String picture;
     @Column(columnDefinition = "date")
-    private String dateImport;
+    private String dateExpiration;
     @ManyToOne
     @JoinColumn(name = "animal_type_id", referencedColumnName = "id")
     private AnimalType animalType;
@@ -21,14 +22,14 @@ public class Animal {
     public Animal() {
     }
 
-    public Animal(Integer id, String name, String description, int quantity,
-                  String picture, String dateImport, AnimalType animalType) {
+    public Animal(Integer id, String name, String description, Double price, int quantity, String picture, String dateExpiration, AnimalType animalType) {
         this.id = id;
         this.name = name;
         this.description = description;
+        this.price = price;
         this.quantity = quantity;
         this.picture = picture;
-        this.dateImport = dateImport;
+        this.dateExpiration = dateExpiration;
         this.animalType = animalType;
     }
 
@@ -56,6 +57,14 @@ public class Animal {
         this.description = description;
     }
 
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
     public int getQuantity() {
         return quantity;
     }
@@ -72,12 +81,12 @@ public class Animal {
         this.picture = picture;
     }
 
-    public String getDateImport() {
-        return dateImport;
+    public String getDateExpiration() {
+        return dateExpiration;
     }
 
-    public void setDateImport(String dateImport) {
-        this.dateImport = dateImport;
+    public void setDateExpiration(String dateExpiration) {
+        this.dateExpiration = dateExpiration;
     }
 
     public AnimalType getAnimalType() {

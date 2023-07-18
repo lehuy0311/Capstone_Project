@@ -1,7 +1,7 @@
-package com.project.capstone_project.model.login;
+package com.example.codegymfoods.model.login;
 
-import com.project.capstone_project.model.customer.Customer;
-import com.project.capstone_project.model.employee.Employee;
+import com.example.codegymfoods.model.customer.Customer;
+import com.example.codegymfoods.model.employee.Employee;
 
 import javax.persistence.*;
 

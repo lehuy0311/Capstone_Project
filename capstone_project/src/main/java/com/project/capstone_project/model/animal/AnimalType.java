@@ -1,4 +1,4 @@
-package com.project.capstone_project.model.animal;
+package com.example.codegymfoods.model.animal;
 
 import javax.persistence.*;
 

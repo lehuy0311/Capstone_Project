@@ -1,8 +1,9 @@
-package com.project.capstone_project.model.blog;
+package com.example.codegymfoods.model.blog;
 
-import com.project.capstone_project.model.employee.Employee;
+import com.example.codegymfoods.model.employee.Employee;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 public class Blog {

@@ -1,8 +1,9 @@
-package com.project.capstone_project.model.customer;
+package com.example.codegymfoods.model.customer;
 
-import com.project.capstone_project.model.login.AppUser;
+import com.example.codegymfoods.model.login.AppUser;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 public class Customer {

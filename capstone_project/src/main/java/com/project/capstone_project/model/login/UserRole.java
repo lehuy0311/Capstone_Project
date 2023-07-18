@@ -1,4 +1,4 @@
-package com.project.capstone_project.model.login;
+package com.example.codegymfoods.model.login;
 
 import javax.persistence.*;
 
